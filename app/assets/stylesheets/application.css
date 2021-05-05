@@ -32,15 +32,18 @@ body{
 }
 
 h1{
-	display: block
-	font-weight: bold;
+	display: block;
+    font-weight:bold;
 	margin:17px 0;
 
+    }
+
+h2{
+	margin:16px 0;
 }
 
-
-p,td{
-	display: block
+p,td,ul{
+	display: block;
 	font-family: verdana, arial, helvetica,sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -111,8 +114,40 @@ td{
 label{
 	display: block;
 }
-
 .field,.action{
 	margin-bottom: 10px
 }
 
+#error_explamation{
+	width:450px;
+	border:2px solid red;
+	padding:7px;
+	padding-bottom: 0px;
+	margin-bottom:  20px;
+	background-color: #f0f0f0;
+   }
+
+  #error_explamation h2{
+	  text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+
+}
+
+#error_explanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
+
+
+.field_with_errors{
+    padding: 2px;
+    background-color: red;
+    display: table;
+
+}
